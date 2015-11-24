@@ -1,7 +1,10 @@
 #!/bin/sh
 
-build_dir = $2
+BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
+ROOT_DIR=$(dirname $BIN_DIR)
 
-cp ../site-packages/* $build_dir/.heroku/python/lib/python2.7/site-packages/
+build_dir = $1
+
+cp $ROOT_DIR/site-packages/* $build_dir/.heroku/python/lib/python2.7/site-packages/
 mkdir -p $build_dir/.heroku/opencv/lib/
-cp ../lib/lib* $build_dir/.heroku/opencv/lib/
+cp $ROOT_DIR/lib/lib* $build_dir/.heroku/opencv/lib/
