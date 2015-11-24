@@ -1,0 +1,7 @@
+#!/bin/sh
+
+build_dir = $2
+
+cp ../site-packages/* $build_dir/.heroku/python/lib/python2.7/site-packages/
+mkdir -p $build_dir/.heroku/opencv/lib/
+cp ../lib/lib* $build_dir/.heroku/opencv/lib/

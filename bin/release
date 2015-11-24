@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+cat <<EOF
+---
+config_vars:
+LD_LIBRARY_PATH: /app/.heroku/opencv/lib/:$LD_LIBRARY_PATH
+EOF
