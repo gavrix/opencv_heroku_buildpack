@@ -1,3 +1,4 @@
 #!/bin/sh
 
+echo "OpenCV for Python [by Gavrix]"
 exit 0
