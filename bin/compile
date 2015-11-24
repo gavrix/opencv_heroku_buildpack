@@ -6,5 +6,5 @@ ROOT_DIR=$(dirname $BIN_DIR)
 BUILD_DIR=$1
 
 cp $ROOT_DIR/site-packages/* $BUILD_DIR/.heroku/python/lib/python2.7/site-packages/
-mkdir -p $build_dir/.heroku/opencv/lib/
+mkdir -p $BUILD_DIR/.heroku/opencv/lib/
 cp $ROOT_DIR/lib/lib* $BUILD_DIR/.heroku/opencv/lib/
